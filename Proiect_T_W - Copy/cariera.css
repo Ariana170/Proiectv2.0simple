@@ -1,0 +1,141 @@
+body{
+    background-color:#FDCEB9;
+    margin: 0;
+    
+  }
+  a{
+    color: #D885A3;
+    text-decoration: none;
+  }
+  #head a{
+    color: #655D8A;
+    text-decoration: none;
+  }
+  #head{
+    text-align: center;
+    color: #655D8A;
+    background-color: #D885A3;
+    font-style: italic;
+    font-weight: bold;
+    font-family: "Monaco", monospace;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    transition: 0.2s;
+    font-size: 25px;
+    padding: 1px;
+    z-index: 10;
+    animation: culoare 5s linear 2s infinite alternate;
+  }
+
+  #menu{
+    position: sticky;
+    background-color: #655D8A;
+    color: #D885A3;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    z-index: 10;
+  }
+  #meniu{
+    background-color: #655D8A;
+    position: sticky;
+    top: 130px;
+    z-index: 10;
+  }
+  .flex-container {
+    display: flex;
+    background-color:#655D8A;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .elem{
+    background-color: #655D8A;
+    float: left;
+    position: relative;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px 90px;
+  }
+  .elemsub{
+    background-color: #655D8A;
+    float: left;
+    position: relative;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px 90px;
+  }
+  .elem:hover{
+    background-color:#FDCEB9;
+  }
+  .elemsub:hover{
+    background-color:#FDCEB9;
+  }
+  .subelem {
+    background-color:#FDCEB9;
+    display: none;
+    position: absolute;
+    list-style-type: none;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 10;
+
+  }
+  .dropelem{
+    z-index: 10;
+    float: left;
+    text-align: center;
+    padding: 10px 70px;
+    margin: 0;
+    background-color:#FDCEB9;
+  }
+  .subelem .dropelem:hover{
+    background-color: #655D8A;
+  }
+
+  .elemsub:hover .subelem {
+    display: block;
+  }
+  @keyframes myfirst {
+    0% {
+      left: 10%;
+      width:100px;
+    }
+    50%{
+      width: 80px;
+    }
+    100% {
+      left: 80%;
+      width: 100px;
+    }
+  }
+  @keyframes culoare {
+    from {background-color: #D885A3;}
+    to {background-color: #fcd9cb;;}
+  }
+  .rotation {
+    position: relative;
+    animation: myfirst 5s linear 2s infinite alternate;
+    width: 100px;
+    margin-left: 10%;
+  }
+  table, th, td {
+    border: 2px solid #7897AB;
+    border-collapse: collapse;
+  }
+  th {
+    background-color: #D885A3;
+    
+  }
+  table{
+    font-size: small;
+  }
+  tr:hover{
+    background-color: #fcd9cb;;
+  }
+  .subtitlu{
+    margin-left: 50px;
+    margin-top: 50px;
+    font-style: oblique;
+    font-family: 'Courier New', Courier, monospace;
+    color:  #655D8A; 
+  }
